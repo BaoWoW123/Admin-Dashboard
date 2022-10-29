@@ -6,32 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <div class="container">
         <div class="leftTab">
-            <ul>
-                <h1>Dashboard</h1>
-                    <li>Home</li>   
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+            <ul><!-- 36px li -->
+                <h2><img src="/images/dashboard.png"> Dashboard</h2>
+                    <li><img src="/images/home.png">Home</li>   
+                    <li><img src="/images/profile.png">Profile </li>
+                    <li><img src="/images/messages.png"> Messages</li>
+                    <li><img src="/images/history.png"> History</li>
+                    <li><img src="/images/tasks.png"> Tasks</li>
+                    <li><img src="/images/communities.png"> Communities</li>
+                    <li><img src="/images/settings.png"> Settings</li>
+                    <li><img src="/images/support.png"> Support</li>
+                    <li><img src="/images/privacy.png"> Privacy</li>
             </ul>
 
         </div>
         <div class="header">
             <div class="topBar">
-                <label for="searchBar"></label>
-                <input type="text" class="searchBar" placeholder="looking for something?">
-                <div class="profile">profile</div>
+                <label for="searchBar"><img src="/images/search.png" style="vertical-align: middle">
+                <input type="text" class="searchBar" placeholder="looking for something?"></label>
+                <div class="profile"><img src="/images/notification.png"><img src="/images/darkmode.png" onclick="changeMode()"> <img src="/images/heimlich.jpg"><h2>Bao WoW</h2></div>
             </div>
             <div class="bottomBar">
-                <div class="name">Hi there, BaoWoW(@BaoWoW123)</div>
+                <div class="name"><img src="/images/heimlich.jpg" style="vertical-align: bottom" ><h2>Bao WoW (@BaoWoW123)</h2></div>
                 <div class="post">
                     <button class="new">New</button>
                     <button class="upload">Upload</button>
@@ -41,6 +42,7 @@
         </div>
         <div class="content">
             <div class="projects">
+                <h2>Projects</h2>
                 <div class="project">
                     <div><strong>Best Project</strong></div>                    
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, voluptatem!
@@ -68,12 +70,14 @@
             </div>
 
             <div class="rightContent">
-                <div class="announcements"><strong>Announcements</strong>
+                <div class="announcements">
+                    <h2>Announcements</h2>
                     <div class="announcement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptatem.</div>
                     <div class="announcement">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, tenetur?</div>
                     <div class="announcement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, cupiditate!</div>
                 </div>
-                <div class="trending"><strong>Trending</strong> 
+                <div class="trending">
+                    <h2>Trending</h2>
                     <div class="trend">Bananas are yellow</div>
                     <div class="trend">Apples are red</div>
                     <div class="trend">Oranges are orange</div>
@@ -84,4 +88,23 @@
         
     </div>
 </body>
+<script>
+    function changeMode() {
+        let container = document.body
+        let leftTab = document.querySelector('.leftTab')
+        let content = document.querySelector('.projects')
+        let rightContent = document.querySelector('.rightContent')
+        let header = document.querySelector('.header')
+        let announcements =document.querySelector('.announcements')
+        let announcement = document.getElementsByClassName('.announcements')
+        let project =
+        leftTab.classList.toggle('darkmode')
+        content.classList.toggle('darkmode')
+        container.classList.toggle('darkmode')
+        header.classList.toggle('darkmode')
+        announcements.classList.toggle('darkmode')
+        rightContent.classList.toggle('darkmode')
+        announcement.classList.toggle('darkmode')
+    }
+</script>
 </html>
