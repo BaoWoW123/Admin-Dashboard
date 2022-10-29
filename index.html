@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="leftTab">
-            <ul><!-- 36px li -->
+            <ul>
                 <h2><img src="/images/dashboard.png"> Dashboard</h2>
                     <li><img src="/images/home.png">Home</li>   
                     <li><img src="/images/profile.png">Profile </li>
@@ -29,7 +29,7 @@
             <div class="topBar">
                 <label for="searchBar"><img src="/images/search.png" style="vertical-align: middle">
                 <input type="text" class="searchBar" placeholder="looking for something?"></label>
-                <div class="profile"><img src="/images/notification.png"><img src="/images/darkmode.png" onclick="changeMode()"> <img src="/images/heimlich.jpg"><h2>Bao WoW</h2></div>
+                <div class="profile"><img src="/images/notification.png"><img src="/images/darkmode.png" onclick="changeMode()"> <img src="/images/heimlich.jpg" class="profileImage"><h2>Bao WoW</h2></div>
             </div>
             <div class="bottomBar">
                 <div class="name"><img src="/images/heimlich.jpg" style="vertical-align: bottom" ><h2>Bao WoW (@BaoWoW123)</h2></div>
@@ -44,28 +44,34 @@
             <div class="projects">
                 <h2>Projects</h2>
                 <div class="project">
-                    <div><strong>Best Project</strong></div>                    
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, voluptatem!
+                    <p><strong>Best Project</strong></p>                    
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, pariatur?lorem10
+                    <div class="projectImages"><img src="/images/favorite.png"> <img src="/images/eye.png"><img src="/images/remove.png"> </div>
                 </div>
                 <div class="project">
-                    <div><strong>Weather App</strong></div>                    
-                    Voluptas odit porro dicta praesentium, a natus velit iusto veritatis.
+                    <p><strong>Weather App</strong></p>                    
+                    Voluptas odit porro dicta praesentium, a natus velit iusto veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, pariatur?lorem10
+                    <div class="projectImages"><img src="/images/favorite.png"> <img src="/images/eye.png"><img src="/images/remove.png"> </div>
                 </div>
                 <div class="project">
-                    <div><strong>Project</strong></div>                    
-                    Illum facilis ut eum doloribus porro sint consequatur accusamus rerum.
+                    <p><strong>Project</strong></p>                    
+                    Illum facilis ut eum doloribus porro sint consequatur accusamus rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, pariatur?lorem10
+                    <div class="projectImages"><img src="/images/favorite.png"> <img src="/images/eye.png"><img src="/images/remove.png"> </div>
+                </div> 
+                <div class="project">
+                    <p><strong>Project</strong></p>                    
+                    Quidem tempora magnam id consequuntur magni maxime, vitae placeat officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, pariatur?lorem10
+                    <div class="projectImages"><img src="/images/favorite.png"> <img src="/images/eye.png"><img src="/images/remove.png"> </div>
                 </div>
                 <div class="project">
-                    <div><strong>Project</strong></div>                    
-                    Quidem tempora magnam id consequuntur magni maxime, vitae placeat officiis.
+                    <p><strong>Project</strong></p>                    
+                    Deleniti fuga labore hic quisquam debitis excepturi autem, vel temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, pariatur?lorem10
+                    <div class="projectImages"><img src="/images/favorite.png"> <img src="/images/eye.png"><img src="/images/remove.png"> </div>
                 </div>
                 <div class="project">
-                    <div><strong>Project</strong></div>                    
-                    Deleniti fuga labore hic quisquam debitis excepturi autem, vel temporibus.
-                </div>
-                <div class="project">
-                    <div><strong>Project</strong></div>                    
-                    Repudiandae exercitationem asperiores, veniam libero sint doloremque! Quia, aspernatur expedita.
+                    <p><strong>Project</strong></p>                    
+                    Repudiandae exercitationem asperiores, veniam libero sint doloremque! Quia, aspernatur expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, pariatur?lorem10
+                    <div class="projectImages"><img src="/images/favorite.png"> <img src="/images/eye.png"><img src="/images/remove.png"> </div>
                 </div>
             </div>
 
@@ -77,11 +83,11 @@
                     <div class="announcement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, cupiditate!</div>
                 </div>
                 <div class="trending">
-                    <h2>Trending</h2>
-                    <div class="trend">Bananas are yellow</div>
-                    <div class="trend">Apples are red</div>
-                    <div class="trend">Oranges are orange</div>
-                    <div class="trend">Blueberries are blue</div>
+                    <h2>Recent Activity</h2>
+                    <div class="trend"><img src="/images/flick.jpg"><strong>@flik</strong> liked your post</div>
+                    <div class="trend"><img src="/images/dot.jpg"><strong>@dittydot</strong> posted an hour ago</div>
+                    <div class="trend"><img src="/images/rosie.jpg"><strong>@rosieposie</strong> followed you</div>
+                    <div class="trend"><img src="/images/hopper.jpg"><strong>@hippityhopper</strong>disliked your post</div>
                 </div>
             </div>
         </div>
@@ -95,7 +101,7 @@
         let content = document.querySelector('.projects')
         let rightContent = document.querySelector('.rightContent')
         let header = document.querySelector('.header')
-        let announcements =document.querySelector('.announcements')
+        let announcements = document.querySelector('.announcements')
         let announcement = document.getElementsByClassName('.announcements')
         let project =
         leftTab.classList.toggle('darkmode')
